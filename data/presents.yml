@@ -1,0 +1,20 @@
+presents:
+  carlos: []
+  maria: []
+  pepe:
+  - assigned_to:
+    - carlos
+    - maria
+    description: tournament chess set
+    favourite: true
+    id: 1
+    link: https://www.youtube.com/watch?v=PvB0kWs2IPQ
+    price: 10000
+    title: chess set
+  - assigned_to: []
+    description: VR Quest II headset
+    favourite: false
+    id: 5
+    link: https://www.youtube.com/watch?v=imGaynZ70xE
+    price: 30000
+    title: VR headset
