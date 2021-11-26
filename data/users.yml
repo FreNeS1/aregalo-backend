@@ -1,16 +1,16 @@
 users:
   carlos:
     alias: Carlos
-    icon: robot.png
+    icon: robot.jpg
     name: carlos
     present_id: 1
   maria:
     alias: María
-    icon: horse.png
+    icon: horse.jpg
     name: maria
     present_id: 1
   pepe:
     alias: Pepe
-    icon: ducky.png
+    icon: ducky.jpg
     name: pepe
-    present_id: 6
+    present_id: 3
