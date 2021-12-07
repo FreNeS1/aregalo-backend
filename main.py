@@ -1,9 +1,18 @@
+from typing import List
+
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from config import *
 from aregalo import FileStore, PresentCreateData, PresentWishData, StoreService
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"])
 store = FileStore(data_path)
 service = StoreService(store)
 
@@ -34,17 +43,17 @@ async def create_present(user: str, present_data: PresentCreateData):
 
 
 @app.put("/aregalo/{user}/presents/{present_id}")
-async def create_present(user: str, present_id: int, present_data: PresentWishData):
+async def update_present(user: str, present_id: int, present_data: PresentWishData):
     return service.update_present(user, present_id, present_data)
 
 
 @app.delete("/aregalo/{user}/presents/{present_id}")
-async def create_present(user: str, present_id: int):
+async def delete_present(user: str, present_id: int):
     return service.delete_present(user, present_id)
 
 
 @app.get("/aregalo/{gifter}/{wisher}/presents/")
-async def get_present_wish_list(wisher: str):
+async def get_present_gift_list(wisher: str):
     return service.get_user_present_gift_list(wisher)
 
 

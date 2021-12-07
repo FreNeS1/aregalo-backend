@@ -1,20 +1,22 @@
 presents:
   carlos: []
+  mama: []
   maria: []
+  papa: []
   pepe:
   - assigned_to:
     - carlos
     - maria
-    description: tournament chess set
+    description: Set de ajedrez de torneo tamaño 4 o 5
     favourite: true
     id: 1
     link: https://www.youtube.com/watch?v=PvB0kWs2IPQ
     price: 10000
-    title: chess set
+    title: Set de ajedrez 1
   - assigned_to: []
-    description: VR Quest II headset
+    description: ''
     favourite: false
     id: 2
     link: https://www.youtube.com/watch?v=imGaynZ70xE
-    price: 30000
-    title: VR headset
+    price: 29999
+    title: Headset VR Quest II

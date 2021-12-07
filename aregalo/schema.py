@@ -25,7 +25,7 @@ class Present:
     id: int
     title: str
     description: str = ""
-    link: Optional[str] = ""
+    link: Optional[str] = None
     price: Optional[int] = None
     favourite: bool = False
     assigned_to: List[str] = field(default_factory=list)
@@ -73,7 +73,7 @@ class PresentCreateData:
     """Present data as returned by the API for present creation."""
     title: str
     description: str = ""
-    link: Optional[str] = ""
+    link: Optional[str] = None
     price: Optional[int] = None
     favourite: bool = False
 
@@ -95,7 +95,7 @@ class PresentWishData:
     id: int
     title: str
     description: str = ""
-    link: Optional[str] = ""
+    link: Optional[str] = None
     price: Optional[int] = None
     favourite: bool = False
 
@@ -117,7 +117,7 @@ class PresentGiftData:
     id: int
     title: str
     description: str = ""
-    link: Optional[str] = ""
+    link: Optional[str] = None
     price: Optional[int] = None
     favourite: bool = False
     assigned_to: List[str] = field(default_factory=list)
