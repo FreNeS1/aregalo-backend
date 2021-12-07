@@ -3,20 +3,4 @@ presents:
   mama: []
   maria: []
   papa: []
-  pepe:
-  - assigned_to:
-    - carlos
-    - maria
-    description: Set de ajedrez de torneo tamaño 4 o 5
-    favourite: true
-    id: 1
-    link: https://www.youtube.com/watch?v=PvB0kWs2IPQ
-    price: 10000
-    title: Set de ajedrez 1
-  - assigned_to: []
-    description: ''
-    favourite: false
-    id: 2
-    link: https://www.youtube.com/watch?v=imGaynZ70xE
-    price: 29999
-    title: Headset VR Quest II
+  pepe: []
