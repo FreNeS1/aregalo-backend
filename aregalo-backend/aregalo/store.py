@@ -13,7 +13,7 @@ PRESENTS_FILE = "presents.yml"
 class Store:
     """Interface for a data store in the application. Should handle users and present lists."""
 
-    def get_users(self) -> list[User]:
+    def get_users(self) -> List[User]:
         """
         Retrieve all users.
         :return: The retrieved users.
